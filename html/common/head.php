@@ -6,6 +6,8 @@
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 <meta name="robots" content="index,follow"/>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="/style/common.css" type="text/css" />
 <script src="/js/jquery-1.7.1.min.js" type="text/javascript"></script>
 <script src="/js/common.js" type="text/javascript"></script>
