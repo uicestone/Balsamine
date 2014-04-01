@@ -1,0 +1,16 @@
+RewriteEngine On
+
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-d
+RewriteCond %{QUERY_STRING} ^(.*)$
+RewriteRule ^(.+?)/(.+?)/(.+?).html$ $1.php?id=$2&aid=$3 [L]
+
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-d
+RewriteCond %{QUERY_STRING} ^(.*)$
+RewriteRule ^(.+?)/(.+?).html$ $1.php?id=$2  [L]
+
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-d
+RewriteCond %{QUERY_STRING} ^(.*)$
+RewriteRule ^(.+?)$ $1.php  [L]
